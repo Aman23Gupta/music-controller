@@ -1,5 +1,5 @@
 from django.conf.urls import url
-from .views import GetRoom, RoomView,CreateRoomView,JoinRoom,UserInRoom,LeaveRoom
+from .views import GetRoom, RoomView,CreateRoomView,JoinRoom,UserInRoom,LeaveRoom,UpdateRoom
 
 urlpatterns = [
     url(r'^room/',RoomView.as_view()),
@@ -7,5 +7,6 @@ urlpatterns = [
     url(r'^get-room',GetRoom.as_view()),
     url(r'^join-room', JoinRoom.as_view()),
     url(r'^user-in-room', UserInRoom.as_view()),
-    url(r'^leave-room', LeaveRoom.as_view())
+    url(r'^leave-room', LeaveRoom.as_view()),
+    url(r'^update-room', UpdateRoom.as_view())
 ]
