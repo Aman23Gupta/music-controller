@@ -19,5 +19,6 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^api/',include('api.urls')),
-    url(r'^',include('frontend.urls'))
+    url(r'^',include('frontend.urls')),
+    url(r'^spotify/',include('spotify.urls'))
 ]
